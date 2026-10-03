@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  quality-gates:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install CI dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck jq
+
+      - name: Repository validation
+        run: make validate
+
+      - name: Bash syntax validation
+        run: make syntax
+
+      - name: ShellCheck
+        run: make lint
+
+      - name: Contract tests
+        run: make contracts
+
+      - name: Golden tests
+        run: make golden
+
+      - name: Integration tests
+        run: make integration
+
+      - name: Adversarial tests
+        run: make adversarial

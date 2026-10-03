@@ -1,0 +1,39 @@
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*
+secrets*
+token*
+password*
+
+# Runtime evidence
+*.log
+*.pid
+*.tmp
+runtime/
+state/
+evidence-output/
+
+# Generated test output
+coverage/
+test-results/
+artifacts/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local lab material
+private/
+lab/
+scratch/
