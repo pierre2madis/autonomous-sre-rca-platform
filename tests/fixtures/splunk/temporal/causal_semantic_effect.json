@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.1",
+  "authority": {
+    "layer": "M2.3D-5D",
+    "type": "TEMPORAL_EVIDENCE_ENVELOPE",
+    "health_decision_authority": false,
+    "causal_confirmation_authority": false,
+    "incident_decision_authority": false,
+    "remediation_authority": false
+  },
+  "entity": {
+    "type": "SPLUNK_CLUSTER_SERVICE",
+    "canonical_key": "service_domain",
+    "domain": "SPLUNK_CLUSTER_SERVICE"
+  },
+  "event": {
+    "domain": "SPLUNK_CLUSTER_SERVICE",
+    "type": "GLOBAL_SEARCHABILITY_IMPACT"
+  },
+  "temporal": {
+    "observed_at": {
+      "value": "2026-10-02T15:03:20Z",
+      "available": true,
+      "authoritative": true,
+      "semantic_role": "EVENT_OBSERVATION_TIME"
+    },
+    "collected_at": {
+      "value": null,
+      "available": false,
+      "authoritative_for_event_ordering": false,
+      "semantic_role": "EVIDENCE_COLLECTION_TIME"
+    },
+    "normalized_at": {
+      "value": null,
+      "available": false,
+      "authoritative_for_event_ordering": false,
+      "semantic_role": "ENVELOPE_PROCESSING_TIME"
+    },
+    "source_event_time": {
+      "value": null,
+      "available": false,
+      "authoritative_for_event_ordering": false,
+      "semantic_role": "SOURCE_NATIVE_EVENT_TIME"
+    }
+  },
+  "temporal_quality": {
+    "event_time_available": true,
+    "event_time_authoritative": true
+  },
+  "provenance": {
+    "observation_source": "SYNTHETIC_CAUSAL_SEMANTIC_TEST",
+    "timestamp_source": "SYNTHETIC_CAUSAL_SEMANTIC_TEST",
+    "timestamp_semantics": "OBSERVATION_TIME",
+    "causal_contract_source": "fixture://splunk/causal-evidence"
+  },
+  "boundaries": {
+    "health_decision_made": false,
+    "causal_claim_confirmed": false,
+    "parent_event_assigned": false,
+    "incident_created": false,
+    "remediation_authorized": false
+  }
+}

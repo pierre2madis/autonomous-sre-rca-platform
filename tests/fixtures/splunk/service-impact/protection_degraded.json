@@ -1,0 +1,35 @@
+{
+  "contract_version": "1.0",
+  "authority": {
+    "component": "splunk_cm_decision_model",
+    "version": "1.1.0-candidate"
+  },
+  "evidence": {
+    "status": "AVAILABLE",
+    "decision_valid": true,
+    "confidence": "HIGH"
+  },
+  "cluster_health": {
+    "state": "DEGRADED",
+    "severity": "major",
+    "score": 80,
+    "rca": "RF_SF_NOT_MET"
+  },
+  "service_guarantees": {
+    "replication_factor_met": false,
+    "search_factor_met": false,
+    "all_data_searchable": true,
+    "indexing_ready": true
+  },
+  "observations": {
+    "peers_discovered": 3,
+    "peers_up": 3,
+    "peers_down": 0,
+    "peers_searchable": 3,
+    "peers_not_searchable": 0
+  },
+  "impacts": [
+    "REPLICATION_GUARANTEE_VIOLATION",
+    "SEARCH_GUARANTEE_VIOLATION"
+  ]
+}

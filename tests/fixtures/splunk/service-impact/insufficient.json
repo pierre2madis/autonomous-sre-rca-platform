@@ -1,0 +1,21 @@
+{
+  "contract_version": "1.0",
+  "authority": {
+    "component": "splunk_cm_decision_model",
+    "version": "1.1.0-candidate"
+  },
+  "evidence": {
+    "status": "DEGRADED",
+    "decision_valid": false,
+    "confidence": "MEDIUM"
+  },
+  "cluster_health": {
+    "state": null,
+    "severity": null,
+    "score": null,
+    "rca": "INSUFFICIENT_EVIDENCE"
+  },
+  "service_guarantees": null,
+  "observations": null,
+  "impacts": []
+}

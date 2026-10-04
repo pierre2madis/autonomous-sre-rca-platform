@@ -1,0 +1,45 @@
+{
+  "model": {
+    "name": "splunk_indexer_cm_consistency_model",
+    "version": "1.0.0-candidate"
+  },
+  "correlation": {
+    "canonical_key": "splunk_instance_guid",
+    "valid": true,
+    "identity_match": true
+  },
+  "local": {
+    "identity": {
+      "guid": "11111111-1111-4111-8111-111111111111",
+      "host": "idx-demo-01"
+    },
+    "health": {
+      "state": "NORMAL",
+      "severity": "none",
+      "score": 0,
+      "confidence": "HIGH",
+      "rca": "NORMAL_INDEXER"
+    }
+  },
+  "cluster_manager": {
+    "identity": {
+      "guid": "11111111-1111-4111-8111-111111111111",
+      "label": "idx-demo-01",
+      "site": "site-demo-a"
+    },
+    "peer_state": {
+      "status": "Up",
+      "searchable": true,
+      "heartbeat_started": true
+    }
+  },
+  "consistency": {
+    "state": "CONSISTENT_HEALTHY",
+    "reason": "LOCAL_NORMAL_CM_UP_SEARCHABLE"
+  },
+  "boundaries": {
+    "cluster_protection_evaluated": false,
+    "service_impact_evaluated": false,
+    "incident_decision_evaluated": false
+  }
+}
