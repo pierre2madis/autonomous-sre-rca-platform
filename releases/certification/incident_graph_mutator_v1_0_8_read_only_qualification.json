@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "artifact": {
+    "name": "incident_graph_mutator",
+    "version": "1.0.8-candidate",
+    "path": "src/incident/incident_graph_mutator_v1_0_8_candidate.sh",
+    "sha256": "fed69889c4c93be505ac7b2bad6cda4aad573df69785e26b8c039ad5a41bd7b5"
+  },
+  "qualification": {
+    "status": "QUALIFIED_READ_ONLY",
+    "verification_model": "FROZEN_INDEPENDENT_ADVERSARIAL_PLAN",
+    "tests_passed": 73,
+    "tests_failed": 0,
+    "tests_total": 73
+  },
+  "verification_groups": {
+    "A_B": {
+      "passed": 10,
+      "total": 10
+    },
+    "C": {
+      "passed": 15,
+      "total": 15
+    },
+    "D": {
+      "passed": 15,
+      "total": 15
+    },
+    "E": {
+      "passed": 6,
+      "total": 6
+    },
+    "F": {
+      "passed": 14,
+      "total": 14
+    },
+    "G": {
+      "passed": 6,
+      "total": 6
+    },
+    "H": {
+      "passed": 7,
+      "total": 7
+    }
+  },
+  "authority": {
+    "validate_only": true,
+    "writer_authority": false,
+    "write_authority": false,
+    "graph_mutation": false,
+    "journal_mutation": false,
+    "audit_mutation": false,
+    "authoritative_runtime_creation": false
+  },
+  "security_boundary": {
+    "fd_stable_capture": "QUALIFIED",
+    "bounded_capture": "QUALIFIED",
+    "strict_json_validation": "QUALIFIED",
+    "snapshot_isolation": "QUALIFIED",
+    "validate_only_exclusivity": "QUALIFIED"
+  },
+  "immutable_anchors": {
+    "frozen_test_plan_sha256": "88b48f7f3fa5ffe67340b14481c2ae4550afbc5e6793b1cf11f04230743411ac",
+    "proof_matrix_sha256": "05abe82fa633e6bba1fea5b26fdd582990137f591ef2bc3f891bc75a33ac0062",
+    "writer_transaction_design_v1_0_1_sha256": "90bbdb37703e7e28ef21068fe527e75fb352bcd43023254dada285b87f510cf6"
+  },
+  "promotion_rule": {
+    "read_only_baseline_immutable": true,
+    "writer_must_be_new_artifact": true,
+    "writer_authority_requires_separate_certification": true
+  }
+}
